@@ -19,6 +19,7 @@ class DateFormatter {
   ) {
     final now = clock.now().toUtc();
     final difference = now.difference(date);
+    const asdf = 'asdf';
 
     if (difference < _oneHour) {
       final minutes = difference.inMinutes;
