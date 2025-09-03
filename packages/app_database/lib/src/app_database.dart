@@ -9,8 +9,7 @@ import 'package:visited_post_storage/visited_post_storage.dart';
     ...VisitedPostStorage.tables,
   ],
 )
-class AppDatabase extends $AppDatabase {
-  AppDatabase([QueryExecutor? executor])
+class AppDatabase extends $AppDatabase { AppDatabase([QueryExecutor? executor])
     : super(
         executor ?? _openConnection(),
       );
