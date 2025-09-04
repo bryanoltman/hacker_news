@@ -13,6 +13,7 @@ class DraftStorage extends DatabaseAccessor<GeneratedDatabase>
   ];
 
   Future<ReplyDraftData?> readReplyDraft(ReplyDraftKey key) async {
+    print('hello');
     final selectStatement = select(replyDrafts)..where(key.filter);
     final draft = await selectStatement.getSingleOrNull();
     return draft;
